@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <link rel="stylesheet" href="assets/hide.css">
+</head>
+<body>
+    <section class="jquery-section">
+        <h2 class="title">Jquery-Slide</h2>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <div class="sunset">
+            <img src="assets/img/sunset.jpg" alt="" class="sunset-img">
+        </div>
+    </section>
+    
+    <section class="jquery-section">
+        <h2 class="title">Jquery-Toggle</h2>
+        <button id="toggle">Click Me</button>
+        <div class="swan">
+            <img src="assets/img/swan.jpg" alt="" class="sunset-img">
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+        
+            $("#hide").click(function(){
+                $(".sunset").slideUp(1000);
+            });
+            $("#show").click(function(){
+                $(".sunset").slideDown(1000);
+            }
+            );
+            $("#toggle").click(function(){
+                $(".swan").slideToggle(1000);
+            });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide</title>
+    <link rel="stylesheet" href="assets/hide.css">
+</head>
+<body>
+    <section class="jquery-section">
+        <h2 class="title">Jquery-Hide</h2>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <div class="sunset">
+            <img src="assets/img/sunset.jpg" alt="" class="sunset-img">
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#hide").click(function(){
+                $(".sunset").hide(1000);
+            });
+            $("#show").click(function(){
+                $(".sunset").show(1000);
+            }
+            );
+        });
+    </script>
+</body>
+</html>
